@@ -7,12 +7,14 @@ class TestStash: XCTestCase {
   let password = "banana45?!"
   let account = "John Hyperseed"
 
+  override func tearDown() {
+    Stash.delete(service, account: account)
+  }
+
   func testAddingPasswordForService() {
     let success = Stash.setPassword(password, service: service, account: account)
 
     XCTAssertTrue(success)
-
-    Stash.delete(service, account: account)
   }
 
   func testUpdatePasswordForService() {
@@ -21,16 +23,12 @@ class TestStash: XCTestCase {
 
     XCTAssertTrue(success)
     XCTAssertEqual(newPassword, Stash.password(service, account: account))
-
-    Stash.delete(service, account: account)
   }
 
   func testGetPasswordForService() {
     Stash.setPassword(password, service: service, account: account)
 
     XCTAssertEqual(password, Stash.password(service, account: account))
-
-    Stash.delete(service, account: account)
   }
 
   func testDeletePasswordForService() {
