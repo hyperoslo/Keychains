@@ -8,7 +8,14 @@
 ## Usage
 
 ```swift
-<API>
+# Save and/or update a password
+Keychain.setPassword(password, forAccount: account)
+
+# Get a password
+Keychain.password(forAccount:account)
+
+# Delete a password
+Keychain.deletePassword(forAccount: account)
 ```
 
 ## Installation
