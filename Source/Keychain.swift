@@ -1,7 +1,11 @@
 import Foundation
 import Security
 
-public struct Stash {
+public struct Keychain {
+
+  static let bundleIdentifier: String = {
+    return NSBundle.mainBundle().bundleIdentifier ?? ""
+  }()
 
   enum Action {
     case Insert, Fetch, Delete
@@ -9,7 +13,7 @@ public struct Stash {
 
   // MARK: - Public methods
 
-  public static func password(service: String, account: String) -> String {
+  public static func password(forAccount account: String, service: String = bundleIdentifier) -> String {
     guard !service.isEmpty && !account.isEmpty else { return "" }
 
     let query = [
@@ -17,10 +21,10 @@ public struct Stash {
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword]
 
-    return Stash.query(.Fetch, query).1
+    return Keychain.query(.Fetch, query).1
   }
 
-  public static func setPassword(password: String, service: String, account: String) -> Bool {
+  public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     let query = [
@@ -29,10 +33,10 @@ public struct Stash {
       kSecClass as String : kSecClassGenericPassword,
       kSecAttrAccessible as String : kSecAttrAccessibleWhenUnlocked]
 
-    return Stash.query(.Insert, query, password).0 == errSecSuccess
+    return Keychain.query(.Insert, query, password).0 == errSecSuccess
   }
 
-  public static func delete(service: String, account: String) -> Bool {
+  public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     let query = [
@@ -41,7 +45,7 @@ public struct Stash {
       kSecClass as String : kSecClassGenericPassword
     ]
 
-    return Stash.query(.Delete, query).0 == errSecSuccess
+    return Keychain.query(.Delete, query).0 == errSecSuccess
   }
 
   // MARK: - Private methods

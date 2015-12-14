@@ -1,9 +1,9 @@
-# Stash
+# Keychain
 
-[![CI Status](http://img.shields.io/travis/hyperoslo/Stash.svg?style=flat)](https://travis-ci.org/hyperoslo/Stash)
-[![Version](https://img.shields.io/cocoapods/v/Stash.svg?style=flat)](http://cocoadocs.org/docsets/Stash)
-[![License](https://img.shields.io/cocoapods/l/Stash.svg?style=flat)](http://cocoadocs.org/docsets/Stash)
-[![Platform](https://img.shields.io/cocoapods/p/Stash.svg?style=flat)](http://cocoadocs.org/docsets/Stash)
+[![CI Status](http://img.shields.io/travis/hyperoslo/Keychain.svg?style=flat)](https://travis-ci.org/hyperoslo/Keychain)
+[![Version](https://img.shields.io/cocoapods/v/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
+[![License](https://img.shields.io/cocoapods/l/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
+[![Platform](https://img.shields.io/cocoapods/p/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
 
 ## Usage
 
@@ -13,11 +13,11 @@
 
 ## Installation
 
-**Stash** is available through [CocoaPods](http://cocoapods.org). To install
+**Keychain** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Stash'
+pod 'Keychain'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ Hyper Interaktiv AS, ios@hyper.no
 
 ## License
 
-**Stash** is available under the MIT license. See the LICENSE file for more info.
+**Keychain** is available under the MIT license. See the LICENSE file for more info.

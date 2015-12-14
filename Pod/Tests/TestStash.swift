@@ -1,44 +1,44 @@
 import UIKit
 import XCTest
 
-class TestStash: XCTestCase {
+class TestKeychain: XCTestCase {
 
-  let service = "stash"
+  let service = "keychain"
   let password = "banana45?!"
   let account = "John Hyperseed"
 
   override func tearDown() {
-    Stash.delete(service, account: account)
+    Keychain.deletePassword(forAccount: account, service: service)
   }
 
   func testAddingPasswordForService() {
-    let success = Stash.setPassword(password, service: service, account: account)
+    let success = Keychain.setPassword(password, forAccount: account, service: service)
 
     XCTAssertTrue(success)
   }
 
   func testUpdatePasswordForService() {
-    Stash.setPassword(password, service: service, account: account)
-    XCTAssertEqual(password, Stash.password(service, account: account))
+    Keychain.setPassword(password, forAccount: account, service: service)
+    XCTAssertEqual(password, Keychain.password(forAccount: account, service: service))
 
     let newPassword = "apple641"
-    let success = Stash.setPassword(newPassword, service: service, account: account)
+    let success = Keychain.setPassword(newPassword, forAccount: account, service: service)
 
     XCTAssertTrue(success)
-    XCTAssertEqual(newPassword, Stash.password(service, account: account))
+    XCTAssertEqual(newPassword, Keychain.password(forAccount: account, service: service))
   }
 
   func testGetPasswordForService() {
-    Stash.setPassword(password, service: service, account: account)
+    Keychain.setPassword(password, forAccount: account, service: service)
 
-    XCTAssertEqual(password, Stash.password(service, account: account))
+    XCTAssertEqual(password, Keychain.password(forAccount: account, service: service))
   }
 
   func testDeletePasswordForService() {
-    XCTAssertTrue(Stash.setPassword(password, service: service, account: account))
+    XCTAssertTrue(Keychain.setPassword(password, forAccount: account, service: service))
 
-    Stash.delete(service, account: account)
+    Keychain.deletePassword(forAccount: account, service: service)
 
-    XCTAssertNotEqual(password, Stash.password(service, account: account))
+    XCTAssertNotEqual(password, Keychain.password(forAccount: account, service: service))
   }
 }
