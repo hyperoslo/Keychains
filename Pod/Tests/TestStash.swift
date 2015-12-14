@@ -18,6 +18,9 @@ class TestStash: XCTestCase {
   }
 
   func testUpdatePasswordForService() {
+    Stash.setPassword(password, service: service, account: account)
+    XCTAssertEqual(password, Stash.password(service, account: account))
+
     let newPassword = "apple641"
     let success = Stash.setPassword(newPassword, service: service, account: account)
 
