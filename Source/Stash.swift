@@ -17,7 +17,7 @@ public struct Stash {
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword]
 
-    return Stash.query(.Fetch, query: query).1
+    return Stash.query(.Fetch, query).1
   }
 
   public static func setPassword(password: String, service: String, account: String) -> Bool {
@@ -29,7 +29,7 @@ public struct Stash {
       kSecClass as String : kSecClassGenericPassword,
       kSecAttrAccessible as String : kSecAttrAccessibleWhenUnlocked]
 
-    return Stash.query(.Insert, query: query, password: password).0 == errSecSuccess
+    return Stash.query(.Insert, query, password).0 == errSecSuccess
   }
 
   public static func delete(service: String, account: String) -> Bool {
@@ -41,12 +41,12 @@ public struct Stash {
       kSecClass as String : kSecClassGenericPassword
     ]
 
-    return Stash.query(.Delete, query: query).0 == errSecSuccess
+    return Stash.query(.Delete, query).0 == errSecSuccess
   }
 
   // MARK: - Private methods
 
-  private static func query(action: Action, query: [String : AnyObject], password: String = "") -> (OSStatus, String) {
+  private static func query(action: Action, _ query: [String : AnyObject], _ password: String = "") -> (OSStatus, String) {
     let passwordData = password.dataUsingEncoding(NSUTF8StringEncoding)
     var returnPassword = ""
     var status = SecItemCopyMatching(query, nil)
