@@ -28,7 +28,7 @@ class TestStash: XCTestCase {
   func testGetPasswordForService() {
     Stash.setPassword(password, service: service, account: account)
 
-    XCTAssertEqual(self.password, Stash.password(service, account: account))
+    XCTAssertEqual(password, Stash.password(service, account: account))
 
     Stash.delete(service, account: account)
   }
@@ -38,6 +38,6 @@ class TestStash: XCTestCase {
 
     Stash.delete(service, account: account)
 
-    XCTAssertNotEqual(self.password, Stash.password(service, account: account))
+    XCTAssertNotEqual(password, Stash.password(service, account: account))
   }
 }
