@@ -58,12 +58,10 @@ public struct Stash {
       case errSecSuccess:
         attributes[kSecValueData as String] = passwordData
         status = SecItemUpdate(query as CFDictionaryRef, attributes)
-        break
       case errSecItemNotFound:
         var query = query
         query[kSecValueData as String] = passwordData
         status = SecItemAdd(query as CFDictionaryRef, nil)
-        break
       default: break
       }
     case .Fetch:
@@ -78,7 +76,6 @@ public struct Stash {
         password = String(data: result, encoding: NSUTF8StringEncoding) {
           returnPassword = password
       }
-      break
     case .Delete:
       status = SecItemDelete(query)
     }
