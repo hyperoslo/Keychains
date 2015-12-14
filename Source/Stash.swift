@@ -12,10 +12,10 @@ public struct Stash {
   public static func password(service: String, account: String) -> String {
     guard !service.isEmpty && !account.isEmpty else { return "" }
 
-    var query = [String : AnyObject]()
-    query[kSecClass as String] = kSecClassGenericPassword
-    query[kSecAttrService as String] = service
-    query[kSecAttrAccount as String] = account
+    let query = [
+      kSecAttrAccount as String : account,
+      kSecAttrService as String : service,
+      kSecClass as String : kSecClassGenericPassword]
 
     return Stash.query(.Fetch, query: query).1
   }
@@ -23,11 +23,11 @@ public struct Stash {
   public static func setPassword(password: String, service: String, account: String) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
-    var query = [String : AnyObject]()
-    query[kSecClass as String] = kSecClassGenericPassword
-    query[kSecAttrService as String] = service
-    query[kSecAttrAccount as String] = account
-    query[kSecAttrAccessible as String] = kSecAttrAccessibleWhenUnlocked
+    let query = [
+      kSecAttrAccount as String : account,
+      kSecAttrService as String : service,
+      kSecClass as String : kSecClassGenericPassword,
+      kSecAttrAccessible as String : kSecAttrAccessibleWhenUnlocked]
 
     return Stash.query(.Insert, query: query, password: password).0 == errSecSuccess
   }
@@ -35,10 +35,11 @@ public struct Stash {
   public static func delete(service: String, account: String) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
-    var query = [String : AnyObject]()
-    query[kSecClass as String] = kSecClassGenericPassword
-    query[kSecAttrService as String] = service
-    query[kSecAttrAccount as String] = account
+    let query = [
+      kSecAttrAccount as String: account,
+      kSecAttrService as String : service,
+      kSecClass as String : kSecClassGenericPassword
+    ]
 
     return Stash.query(.Delete, query: query).0 == errSecSuccess
   }
