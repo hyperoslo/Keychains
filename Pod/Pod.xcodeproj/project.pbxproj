@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14A139B41AEFC72B00AD732F /* TestStash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* TestStash.swift */; };
-		BD7DEFB21C1F0CF60016ABDE /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7DEFB11C1F0CF60016ABDE /* Stash.swift */; };
+		BD7DEFB21C1F0CF60016ABDE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7DEFB11C1F0CF60016ABDE /* Keychain.swift */; };
 		BD7DEFB41C1F0F480016ABDE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7DEFB31C1F0F480016ABDE /* Security.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +20,7 @@
 		14C136521AB784B200B7B07A /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
 		14C136541AB784B200B7B07A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		14C136551AB784B200B7B07A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BD7DEFB11C1F0CF60016ABDE /* Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stash.swift; sourceTree = "<group>"; };
+		BD7DEFB11C1F0CF60016ABDE /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		BD7DEFB31C1F0F480016ABDE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 		14C1365B1AB784BC00B7B07A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BD7DEFB11C1F0CF60016ABDE /* Stash.swift */,
+				BD7DEFB11C1F0CF60016ABDE /* Keychain.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A139B41AEFC72B00AD732F /* TestStash.swift in Sources */,
-				BD7DEFB21C1F0CF60016ABDE /* Stash.swift in Sources */,
+				BD7DEFB21C1F0CF60016ABDE /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
