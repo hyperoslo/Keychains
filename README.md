@@ -8,13 +8,13 @@
 ## Usage
 
 ```swift
-# Save and/or update a password
+// Save and/or update a password
 Keychain.setPassword(password, forAccount: account)
 
-# Get a password
+// Get a password
 Keychain.password(forAccount:account)
 
-# Delete a password
+// Delete a password
 Keychain.deletePassword(forAccount: account)
 ```
 
