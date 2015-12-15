@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/hyperoslo/Keychain.svg?style=flat)](https://travis-ci.org/hyperoslo/Keychain)
 [![Version](https://img.shields.io/cocoapods/v/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
 [![Platform](https://img.shields.io/cocoapods/p/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
 
@@ -27,6 +28,13 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Keychain'
+```
+
+**Keychain** is also available through [Carthage](https://github.com/Carthage/Carthage).
+To install just write into your Cartfile:
+
+```ruby
+github "hyperoslo/Keychain"
 ```
 
 ## Author
