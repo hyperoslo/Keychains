@@ -1,5 +1,6 @@
 import UIKit
 import XCTest
+@testable import Keychain
 
 class TestKeychain: XCTestCase {
 
