@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
 [![Platform](https://img.shields.io/cocoapods/p/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
 
+A keychain wrapper that is so easy to use that your cat could use it.
+
 ## Usage
 
 ```swift
