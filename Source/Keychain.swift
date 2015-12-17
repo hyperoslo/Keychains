@@ -14,37 +14,61 @@ public struct Keychain {
   // MARK: - Public methods
 
   public static func password(forAccount account: String, service: String = bundleIdentifier) -> String {
+    return password(forAccount: account, service: service, accessGroup: "")
+  }
+  
+  public static func password(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> String {
     guard !service.isEmpty && !account.isEmpty else { return "" }
 
-    let query = [
+    var query = [
       kSecAttrAccount as String : account,
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword]
 
+    if !accessGroup.isEmpty {
+      query[kSecAttrAccessGroup as String] = accessGroup
+    }
+    
     return Keychain.query(.Fetch, query).1
   }
 
   public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier) -> Bool {
+    return setPassword(password, forAccount: account, service: service, accessGroup: "")
+  }
+  
+  public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
-    let query = [
+    var query = [
       kSecAttrAccount as String : account,
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword,
       kSecAttrAccessible as String : kSecAttrAccessibleWhenUnlocked]
 
+    if !accessGroup.isEmpty {
+      query[kSecAttrAccessGroup as String] = accessGroup
+    }
+    
     return Keychain.query(.Insert, query, password).0 == errSecSuccess
   }
 
   public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
+    return deletePassword(forAccount: account, service: service, accessGroup: "")
+  }
+  
+  public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
-    let query = [
+    var query = [
       kSecAttrAccount as String: account,
       kSecAttrService as String : service,
       kSecClass as String : kSecClassGenericPassword
     ]
 
+    if !accessGroup.isEmpty {
+      query[kSecAttrAccessGroup as String] = accessGroup
+    }
+    
     return Keychain.query(.Delete, query).0 == errSecSuccess
   }
 
