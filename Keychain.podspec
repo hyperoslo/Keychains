@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Keychain"
-  s.summary          = "A short description of Keychain."
+  s.summary          = "A keychain wrapper that is so easy to use that your cat could use it."
   s.version          = "0.1.0"
   s.homepage         = "https://github.com/hyperoslo/Keychain"
   s.license          = 'MIT'
