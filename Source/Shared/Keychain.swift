@@ -13,11 +13,7 @@ public struct Keychain {
 
   // MARK: - Public methods
 
-  public static func password(forAccount account: String, service: String = bundleIdentifier) -> String {
-    return password(forAccount: account, service: service, accessGroup: "")
-  }
-  
-  public static func password(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> String {
+  public static func password(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> String {
     guard !service.isEmpty && !account.isEmpty else { return "" }
 
     var query = [
@@ -32,11 +28,7 @@ public struct Keychain {
     return Keychain.query(.Fetch, query).1
   }
 
-  public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier) -> Bool {
-    return setPassword(password, forAccount: account, service: service, accessGroup: "")
-  }
-  
-  public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
+  public static func setPassword(password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     var query = [
