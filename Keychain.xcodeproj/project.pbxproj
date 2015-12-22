@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA447EC1C294B45003FDEAD /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA447E21C294B45003FDEAD /* Keychain.framework */; };
+		BDA448021C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
+		BDA448031C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
+		BDA448131C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4480E1C294C29003FDEAD /* Info.plist */; };
+		BDA448141C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4480E1C294C29003FDEAD /* Info.plist */; };
+		BDA448151C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA448101C294C29003FDEAD /* Info.plist */; };
+		BDA448161C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA448101C294C29003FDEAD /* Info.plist */; };
+		BDA448171C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
+		BDA448181C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
 		D56DA9E71C20608E003E7253 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56DA9DC1C20608E003E7253 /* Keychain.framework */; };
-		D56DAA001C2061F4003E7253 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56DA9FC1C2061F4003E7253 /* Keychain.swift */; };
-		D56DAA011C2061FF003E7253 /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56DA9FA1C2061F4003E7253 /* TestKeychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BDA447ED1C294B45003FDEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D56DA9D31C20608E003E7253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDA447E11C294B45003FDEAD;
+			remoteInfo = "Keychain-Mac";
+		};
 		D56DA9E81C20608E003E7253 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D56DA9D31C20608E003E7253 /* Project object */;
@@ -23,15 +37,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BDA447E21C294B45003FDEAD /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA447FB1C294B68003FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA447FD1C294B68003FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA448011C294B9F003FDEAD /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		BDA4480E1C294C29003FDEAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA448101C294C29003FDEAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA448121C294C29003FDEAD /* TestKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeychain.swift; sourceTree = "<group>"; };
 		D56DA9DC1C20608E003E7253 /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56DA9E61C20608E003E7253 /* Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56DA9F71C2061F4003E7253 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D56DA9F91C2061F4003E7253 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D56DA9FA1C2061F4003E7253 /* TestKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeychain.swift; sourceTree = "<group>"; };
-		D56DA9FC1C2061F4003E7253 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BDA447DE1C294B45003FDEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA447E81C294B45003FDEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA447EC1C294B45003FDEAD /* Keychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D56DA9D81C20608E003E7253 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,13 +83,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDA447F91C294B68003FDEAD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BDA447FA1C294B68003FDEAD /* iOS */,
+				BDA447FC1C294B68003FDEAD /* Mac */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		BDA447FA1C294B68003FDEAD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDA447FB1C294B68003FDEAD /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BDA447FC1C294B68003FDEAD /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				BDA447FD1C294B68003FDEAD /* Info.plist */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		BDA447FF1C294B9F003FDEAD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BDA448001C294B9F003FDEAD /* Shared */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BDA448001C294B9F003FDEAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BDA448011C294B9F003FDEAD /* Keychain.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BDA4480C1C294C29003FDEAD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDA4480D1C294C29003FDEAD /* iOS */,
+				BDA4480F1C294C29003FDEAD /* Mac */,
+				BDA448111C294C29003FDEAD /* Shared */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BDA4480D1C294C29003FDEAD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDA4480E1C294C29003FDEAD /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BDA4480F1C294C29003FDEAD /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				BDA448101C294C29003FDEAD /* Info.plist */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		BDA448111C294C29003FDEAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BDA448121C294C29003FDEAD /* TestKeychain.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		D56DA9D21C20608E003E7253 = {
 			isa = PBXGroup;
 			children = (
-				D56DA9F61C2061F4003E7253 /* SupportFiles */,
-				D56DA9FB1C2061F4003E7253 /* Source */,
-				D56DA9F81C2061F4003E7253 /* Tests */,
 				D56DA9DD1C20608E003E7253 /* Products */,
+				BDA447FF1C294B9F003FDEAD /* Source */,
+				BDA447F91C294B68003FDEAD /* SupportFiles */,
+				BDA4480C1C294C29003FDEAD /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,38 +173,22 @@
 			children = (
 				D56DA9DC1C20608E003E7253 /* Keychain.framework */,
 				D56DA9E61C20608E003E7253 /* Tests-iOS.xctest */,
+				BDA447E21C294B45003FDEAD /* Keychain.framework */,
+				BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D56DA9F61C2061F4003E7253 /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				D56DA9F71C2061F4003E7253 /* Info.plist */,
-			);
-			path = SupportFiles;
-			sourceTree = "<group>";
-		};
-		D56DA9F81C2061F4003E7253 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D56DA9F91C2061F4003E7253 /* Info.plist */,
-				D56DA9FA1C2061F4003E7253 /* TestKeychain.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		D56DA9FB1C2061F4003E7253 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D56DA9FC1C2061F4003E7253 /* Keychain.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BDA447DF1C294B45003FDEAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D56DA9D91C20608E003E7253 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +199,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BDA447E11C294B45003FDEAD /* Keychain-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychain-Mac" */;
+			buildPhases = (
+				BDA447DD1C294B45003FDEAD /* Sources */,
+				BDA447DE1C294B45003FDEAD /* Frameworks */,
+				BDA447DF1C294B45003FDEAD /* Headers */,
+				BDA447E01C294B45003FDEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Keychain-Mac";
+			productName = "Keychain-Mac";
+			productReference = BDA447E21C294B45003FDEAD /* Keychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDA447EA1C294B45003FDEAD /* Tests-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA447F61C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Tests-Mac" */;
+			buildPhases = (
+				BDA447E71C294B45003FDEAD /* Sources */,
+				BDA447E81C294B45003FDEAD /* Frameworks */,
+				BDA447E91C294B45003FDEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDA447EE1C294B45003FDEAD /* PBXTargetDependency */,
+			);
+			name = "Tests-Mac";
+			productName = "Keychain-MacTests";
+			productReference = BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D56DA9DB1C20608E003E7253 /* Keychain-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D56DA9F01C20608E003E7253 /* Build configuration list for PBXNativeTarget "Keychain-iOS" */;
@@ -153,6 +281,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
+					BDA447E11C294B45003FDEAD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BDA447EA1C294B45003FDEAD = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					D56DA9DB1C20608E003E7253 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -175,11 +309,29 @@
 			targets = (
 				D56DA9DB1C20608E003E7253 /* Keychain-iOS */,
 				D56DA9E51C20608E003E7253 /* Tests-iOS */,
+				BDA447E11C294B45003FDEAD /* Keychain-Mac */,
+				BDA447EA1C294B45003FDEAD /* Tests-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BDA447E01C294B45003FDEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA447E91C294B45003FDEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA448161C294C29003FDEAD /* Info.plist in Resources */,
+				BDA448141C294C29003FDEAD /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D56DA9DA1C20608E003E7253 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,17 +343,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA448151C294C29003FDEAD /* Info.plist in Resources */,
+				BDA448131C294C29003FDEAD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BDA447DD1C294B45003FDEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA448031C294B9F003FDEAD /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA447E71C294B45003FDEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA448181C294C29003FDEAD /* TestKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D56DA9D71C20608E003E7253 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56DAA001C2061F4003E7253 /* Keychain.swift in Sources */,
+				BDA448021C294B9F003FDEAD /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,13 +379,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56DAA011C2061FF003E7253 /* TestKeychain.swift in Sources */,
+				BDA448171C294C29003FDEAD /* TestKeychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BDA447EE1C294B45003FDEAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDA447E11C294B45003FDEAD /* Keychain-Mac */;
+			targetProxy = BDA447ED1C294B45003FDEAD /* PBXContainerItemProxy */;
+		};
 		D56DA9E91C20608E003E7253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D56DA9DB1C20608E003E7253 /* Keychain-iOS */;
@@ -224,6 +399,76 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BDA447F41C294B45003FDEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-Mac";
+				PRODUCT_NAME = Keychain;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BDA447F51C294B45003FDEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-Mac";
+				PRODUCT_NAME = Keychain;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BDA447F71C294B45003FDEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BDA447F81C294B45003FDEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		D56DA9EE1C20608E003E7253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,7 +565,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -337,7 +582,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -350,7 +595,7 @@
 		D56DA9F41C20608E003E7253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.KeychainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +605,7 @@
 		D56DA9F51C20608E003E7253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.KeychainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +615,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychain-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA447F41C294B45003FDEAD /* Debug */,
+				BDA447F51C294B45003FDEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDA447F61C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Tests-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA447F71C294B45003FDEAD /* Debug */,
+				BDA447F81C294B45003FDEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
