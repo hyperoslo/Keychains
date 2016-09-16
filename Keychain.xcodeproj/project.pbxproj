@@ -10,10 +10,8 @@
 		BDA447EC1C294B45003FDEAD /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA447E21C294B45003FDEAD /* Keychain.framework */; };
 		BDA448021C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
 		BDA448031C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
-		BDA448131C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4480E1C294C29003FDEAD /* Info.plist */; };
 		BDA448141C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4480E1C294C29003FDEAD /* Info.plist */; };
 		BDA448151C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA448101C294C29003FDEAD /* Info.plist */; };
-		BDA448161C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA448101C294C29003FDEAD /* Info.plist */; };
 		BDA448171C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
 		BDA448181C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
 		D56DA9E71C20608E003E7253 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56DA9DC1C20608E003E7253 /* Keychain.framework */; };
@@ -278,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
 					BDA447E11C294B45003FDEAD = {
@@ -289,9 +287,11 @@
 					};
 					D56DA9DB1C20608E003E7253 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D56DA9E51C20608E003E7253 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -327,7 +327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA448161C294C29003FDEAD /* Info.plist in Resources */,
 				BDA448141C294C29003FDEAD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA448151C294C29003FDEAD /* Info.plist in Resources */,
-				BDA448131C294C29003FDEAD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +400,7 @@
 		BDA447F41C294B45003FDEAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -423,7 +421,7 @@
 		BDA447F51C294B45003FDEAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -482,8 +480,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -530,8 +530,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -551,6 +553,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -561,6 +564,7 @@
 		D56DA9F11C20608E003E7253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -572,12 +576,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychain;
 				PRODUCT_NAME = Keychain;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D56DA9F21C20608E003E7253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -589,6 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychain;
 				PRODUCT_NAME = Keychain;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -599,6 +606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.KeychainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -609,6 +617,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.KeychainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -622,6 +631,7 @@
 				BDA447F51C294B45003FDEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDA447F61C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Tests-Mac" */ = {
 			isa = XCConfigurationList;
@@ -630,6 +640,7 @@
 				BDA447F81C294B45003FDEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychain" */ = {
 			isa = XCConfigurationList;
