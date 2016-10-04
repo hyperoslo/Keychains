@@ -28,7 +28,7 @@ public struct Keychain {
     return Keychain.query(.fetch, query as [String : AnyObject]).1
   }
 
-  public static func setPassword(_ password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
+  @discardableResult public static func setPassword(_ password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     var query = [
