@@ -44,11 +44,11 @@ public struct Keychain {
     return Keychain.query(.insert, query as [String : AnyObject], password).0 == errSecSuccess
   }
 
-  public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
+  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
     return deletePassword(forAccount: account, service: service, accessGroup: "")
   }
 
-  public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
+  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     var query = [
