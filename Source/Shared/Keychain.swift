@@ -3,16 +3,33 @@ import Security
 
 public struct Keychain {
 
+  /// This is used to identifier your service
   static let bundleIdentifier: String = {
     return Bundle.main.bundleIdentifier ?? ""
   }()
 
+  /// Actions that can be performed with Keychain, mostly for handling password
   enum Action {
-    case insert, fetch, delete
+    /// Insert an item into keychain
+    case insert
+
+    /// Fetch an item from keychain
+    case fetch
+
+    /// Delete an item from keychain
+    case delete
   }
 
   // MARK: - Public methods
 
+
+  /// Query password using account in a Keychain service
+  ///
+  /// - Parameters:
+  ///   - account: The account, this is for kSecAttrAccount
+  ///   - service: The service, this is for kSecAttrService
+  ///   - accessGroup: The access group, this is for kSecAttrAccessGroup
+  /// - Returns: The password
   public static func password(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> String {
     guard !service.isEmpty && !account.isEmpty else { return "" }
 
@@ -28,6 +45,15 @@ public struct Keychain {
     return Keychain.query(.fetch, query as [String : AnyObject]).1
   }
 
+
+  /// Set the password for the account in a Keychain service
+  ///
+  /// - Parameters:
+  ///   - password: The password string you want to set
+  ///   - account: The account, this is for kSecAttrAccount
+  ///   - service: The service, this is for kSecAttrService
+  ///   - accessGroup: The access group, this is for kSecAttrAccessGroup
+  /// - Returns: True if the password can be set successfully
   @discardableResult public static func setPassword(_ password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
@@ -44,11 +70,14 @@ public struct Keychain {
     return Keychain.query(.insert, query as [String : AnyObject], password).0 == errSecSuccess
   }
 
-  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
-    return deletePassword(forAccount: account, service: service, accessGroup: "")
-  }
 
-  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
+  /// Delete password for the account in a Keychain service
+  ///
+  /// - Parameters:
+  ///   - account: The account, this is for kSecAttrAccount
+  ///   - service: The service, this is for kSecAttrService
+  /// - Returns: True if the password can be safely deleted
+  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     var query = [
@@ -66,6 +95,14 @@ public struct Keychain {
 
   // MARK: - Private methods
 
+
+  /// A helper method to query Keychain based on some actions
+  ///
+  /// - Parameters:
+  ///   - action: The action
+  ///   - query: A dictionary containing keychain parameters
+  ///   - password: The password
+  /// - Returns: A tuple with status and returned password
   fileprivate static func query(_ action: Action, _ query: [String : AnyObject], _ password: String = "") -> (OSStatus, String) {
     let passwordData = password.data(using: String.Encoding.utf8)
     var returnPassword = ""
