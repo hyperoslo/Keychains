@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDA447EC1C294B45003FDEAD /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA447E21C294B45003FDEAD /* Keychain.framework */; };
+		BDA447EC1C294B45003FDEAD /* Keychains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA447E21C294B45003FDEAD /* Keychains.framework */; };
 		BDA448021C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
 		BDA448031C294B9F003FDEAD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448011C294B9F003FDEAD /* Keychain.swift */; };
 		BDA448141C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4480E1C294C29003FDEAD /* Info.plist */; };
 		BDA448151C294C29003FDEAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA448101C294C29003FDEAD /* Info.plist */; };
 		BDA448171C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
 		BDA448181C294C29003FDEAD /* TestKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA448121C294C29003FDEAD /* TestKeychain.swift */; };
-		D56DA9E71C20608E003E7253 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56DA9DC1C20608E003E7253 /* Keychain.framework */; };
+		D56DA9E71C20608E003E7253 /* Keychains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56DA9DC1C20608E003E7253 /* Keychains.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDA447E21C294B45003FDEAD /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA447E21C294B45003FDEAD /* Keychains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA447FB1C294B68003FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDA447FD1C294B68003FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		BDA4480E1C294C29003FDEAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDA448101C294C29003FDEAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDA448121C294C29003FDEAD /* TestKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeychain.swift; sourceTree = "<group>"; };
-		D56DA9DC1C20608E003E7253 /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56DA9DC1C20608E003E7253 /* Keychains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56DA9E61C20608E003E7253 /* Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA447EC1C294B45003FDEAD /* Keychain.framework in Frameworks */,
+				BDA447EC1C294B45003FDEAD /* Keychains.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56DA9E71C20608E003E7253 /* Keychain.framework in Frameworks */,
+				D56DA9E71C20608E003E7253 /* Keychains.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,9 +169,9 @@
 		D56DA9DD1C20608E003E7253 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D56DA9DC1C20608E003E7253 /* Keychain.framework */,
+				D56DA9DC1C20608E003E7253 /* Keychains.framework */,
 				D56DA9E61C20608E003E7253 /* Tests-iOS.xctest */,
-				BDA447E21C294B45003FDEAD /* Keychain.framework */,
+				BDA447E21C294B45003FDEAD /* Keychains.framework */,
 				BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */,
 			);
 			name = Products;
@@ -197,9 +197,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BDA447E11C294B45003FDEAD /* Keychain-Mac */ = {
+		BDA447E11C294B45003FDEAD /* Keychains-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychain-Mac" */;
+			buildConfigurationList = BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychains-Mac" */;
 			buildPhases = (
 				BDA447DD1C294B45003FDEAD /* Sources */,
 				BDA447DE1C294B45003FDEAD /* Frameworks */,
@@ -210,9 +210,9 @@
 			);
 			dependencies = (
 			);
-			name = "Keychain-Mac";
+			name = "Keychains-Mac";
 			productName = "Keychain-Mac";
-			productReference = BDA447E21C294B45003FDEAD /* Keychain.framework */;
+			productReference = BDA447E21C294B45003FDEAD /* Keychains.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BDA447EA1C294B45003FDEAD /* Tests-Mac */ = {
@@ -233,9 +233,9 @@
 			productReference = BDA447EB1C294B45003FDEAD /* Tests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D56DA9DB1C20608E003E7253 /* Keychain-iOS */ = {
+		D56DA9DB1C20608E003E7253 /* Keychains-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D56DA9F01C20608E003E7253 /* Build configuration list for PBXNativeTarget "Keychain-iOS" */;
+			buildConfigurationList = D56DA9F01C20608E003E7253 /* Build configuration list for PBXNativeTarget "Keychains-iOS" */;
 			buildPhases = (
 				D56DA9D71C20608E003E7253 /* Sources */,
 				D56DA9D81C20608E003E7253 /* Frameworks */,
@@ -246,9 +246,9 @@
 			);
 			dependencies = (
 			);
-			name = "Keychain-iOS";
+			name = "Keychains-iOS";
 			productName = Keychain;
-			productReference = D56DA9DC1C20608E003E7253 /* Keychain.framework */;
+			productReference = D56DA9DC1C20608E003E7253 /* Keychains.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D56DA9E51C20608E003E7253 /* Tests-iOS */ = {
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychain" */;
+			buildConfigurationList = D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychains" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -307,9 +307,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D56DA9DB1C20608E003E7253 /* Keychain-iOS */,
+				D56DA9DB1C20608E003E7253 /* Keychains-iOS */,
 				D56DA9E51C20608E003E7253 /* Tests-iOS */,
-				BDA447E11C294B45003FDEAD /* Keychain-Mac */,
+				BDA447E11C294B45003FDEAD /* Keychains-Mac */,
 				BDA447EA1C294B45003FDEAD /* Tests-Mac */,
 			);
 		};
@@ -386,12 +386,12 @@
 /* Begin PBXTargetDependency section */
 		BDA447EE1C294B45003FDEAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BDA447E11C294B45003FDEAD /* Keychain-Mac */;
+			target = BDA447E11C294B45003FDEAD /* Keychains-Mac */;
 			targetProxy = BDA447ED1C294B45003FDEAD /* PBXContainerItemProxy */;
 		};
 		D56DA9E91C20608E003E7253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D56DA9DB1C20608E003E7253 /* Keychain-iOS */;
+			target = D56DA9DB1C20608E003E7253 /* Keychains-iOS */;
 			targetProxy = D56DA9E81C20608E003E7253 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,8 +411,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-Mac";
-				PRODUCT_NAME = Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychains-Mac";
+				PRODUCT_NAME = Keychains;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -433,8 +433,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychain-Mac";
-				PRODUCT_NAME = Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Keychains-Mac";
+				PRODUCT_NAME = Keychains;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -577,8 +577,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychain;
-				PRODUCT_NAME = Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychains;
+				PRODUCT_NAME = Keychains;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -596,8 +596,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychain;
-				PRODUCT_NAME = Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Keychains;
+				PRODUCT_NAME = Keychains;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -628,7 +628,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychain-Mac" */ = {
+		BDA447F31C294B45003FDEAD /* Build configuration list for PBXNativeTarget "Keychains-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDA447F41C294B45003FDEAD /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychain" */ = {
+		D56DA9D61C20608E003E7253 /* Build configuration list for PBXProject "Keychains" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56DA9EE1C20608E003E7253 /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D56DA9F01C20608E003E7253 /* Build configuration list for PBXNativeTarget "Keychain-iOS" */ = {
+		D56DA9F01C20608E003E7253 /* Build configuration list for PBXNativeTarget "Keychains-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56DA9F11C20608E003E7253 /* Debug */,

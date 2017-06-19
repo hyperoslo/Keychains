@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D56DA9DB1C20608E003E7253"
+               BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
                BuildableName = "Keychain.framework"
-               BlueprintName = "Keychain-iOS"
-               ReferencedContainer = "container:Keychain.xcodeproj">
+               BlueprintName = "Keychains-Mac"
+               ReferencedContainer = "container:Keychains.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D56DA9E51C20608E003E7253"
-               BuildableName = "Tests-iOS.xctest"
-               BlueprintName = "Tests-iOS"
-               ReferencedContainer = "container:Keychain.xcodeproj">
+               BlueprintIdentifier = "BDA447EA1C294B45003FDEAD"
+               BuildableName = "Tests-Mac.xctest"
+               BlueprintName = "Tests-Mac"
+               ReferencedContainer = "container:Keychains.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D56DA9DB1C20608E003E7253"
+            BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
             BuildableName = "Keychain.framework"
-            BlueprintName = "Keychain-iOS"
-            ReferencedContainer = "container:Keychain.xcodeproj">
+            BlueprintName = "Keychains-Mac"
+            ReferencedContainer = "container:Keychains.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D56DA9DB1C20608E003E7253"
+            BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
             BuildableName = "Keychain.framework"
-            BlueprintName = "Keychain-iOS"
-            ReferencedContainer = "container:Keychain.xcodeproj">
+            BlueprintName = "Keychains-Mac"
+            ReferencedContainer = "container:Keychains.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +82,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D56DA9DB1C20608E003E7253"
+            BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
             BuildableName = "Keychain.framework"
-            BlueprintName = "Keychain-iOS"
-            ReferencedContainer = "container:Keychain.xcodeproj">
+            BlueprintName = "Keychains-Mac"
+            ReferencedContainer = "container:Keychains.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

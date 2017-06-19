@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Keychain.xcodeproj">
+      location = "self:/Users/khoa/XcodeProject1/Keychain/Keychains.xcodeproj">
    </FileRef>
 </Workspace>
