@@ -1,5 +1,5 @@
 import XCTest
-@testable import Keychain
+@testable import Keychains
 
 class TestKeychain: XCTestCase {
 
