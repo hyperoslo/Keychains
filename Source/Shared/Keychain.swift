@@ -77,11 +77,7 @@ public struct Keychain {
   ///   - account: The account, this is for kSecAttrAccount
   ///   - service: The service, this is for kSecAttrService
   /// - Returns: True if the password can be safely deleted
-  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier) -> Bool {
-    return deletePassword(forAccount: account, service: service, accessGroup: "")
-  }
-
-  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String) -> Bool {
+  @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
     guard !service.isEmpty && !account.isEmpty else { return false }
 
     var query = [
