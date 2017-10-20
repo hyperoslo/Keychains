@@ -8,6 +8,8 @@ class TestKeychain: XCTestCase {
   let account = "John Hyperseed"
 
   override func tearDown() {
+    super.tearDown()
+
     Keychain.deletePassword(forAccount: account, service: service)
   }
 
