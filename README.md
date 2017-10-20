@@ -1,10 +1,10 @@
-# Keychain
+# Keychains
 
-[![CI Status](http://img.shields.io/travis/hyperoslo/Keychain.svg?style=flat)](https://travis-ci.org/hyperoslo/Keychain)
-[![Version](https://img.shields.io/cocoapods/v/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
+[![Version](https://img.shields.io/cocoapods/v/Keychains.svg?style=flat)](http://cocoadocs.org/docsets/Keychains)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
-[![Platform](https://img.shields.io/cocoapods/p/Keychain.svg?style=flat)](http://cocoadocs.org/docsets/Keychain)
+[![License](https://img.shields.io/cocoapods/l/Keychains.svg?style=flat)](http://cocoadocs.org/docsets/Keychains)
+[![Platform](https://img.shields.io/cocoapods/p/Keychains.svg?style=flat)](http://cocoadocs.org/docsets/Keychains)
+![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)
 
 A keychain wrapper that is so easy to use that your cat could use it.
 
@@ -23,18 +23,18 @@ Keychain.deletePassword(forAccount: account)
 
 ## Installation
 
-**Keychain** is available through [CocoaPods](http://cocoapods.org). To install
+**Keychains** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Keychain'
+pod 'Keychains'
 ```
 
 **Keychain** is also available through [Carthage](https://github.com/Carthage/Carthage).
 To install just write into your Cartfile:
 
 ```ruby
-github "hyperoslo/Keychain"
+github "hyperoslo/Keychains"
 ```
 
 ## Author
@@ -43,4 +43,4 @@ Hyper Interaktiv AS, ios@hyper.no
 
 ## License
 
-**Keychain** is available under the MIT license. See the LICENSE file for more info.
+**Keychains** is available under the MIT license. See the LICENSE file for more info.
