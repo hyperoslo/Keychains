@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
                BuildableName = "Keychains.framework"
-               BlueprintName = "Keychains-Mac"
+               BlueprintName = "Keychains-macOS"
                ReferencedContainer = "container:Keychains.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDA447EA1C294B45003FDEAD"
-               BuildableName = "Tests-Mac.xctest"
-               BlueprintName = "Tests-Mac"
-               ReferencedContainer = "container:Keychains.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
-            BuildableName = "Keychains.framework"
-            BlueprintName = "Keychains-Mac"
-            ReferencedContainer = "container:Keychains.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -68,7 +49,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
             BuildableName = "Keychains.framework"
-            BlueprintName = "Keychains-Mac"
+            BlueprintName = "Keychains-macOS"
             ReferencedContainer = "container:Keychains.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -86,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BDA447E11C294B45003FDEAD"
             BuildableName = "Keychains.framework"
-            BlueprintName = "Keychains-Mac"
+            BlueprintName = "Keychains-macOS"
             ReferencedContainer = "container:Keychains.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
