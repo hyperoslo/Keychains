@@ -30,8 +30,12 @@ public struct Keychain {
   ///   - service: The service, this is for kSecAttrService
   ///   - accessGroup: The access group, this is for kSecAttrAccessGroup
   /// - Returns: The password
-  public static func password(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> String {
-    guard !service.isEmpty && !account.isEmpty else { return "" }
+  public static func password(forAccount account: String,
+                              service: String = bundleIdentifier,
+                              accessGroup: String = "") -> String? {
+    guard !service.isEmpty && !account.isEmpty else {
+      return nil
+    }
 
     var query = [
       kSecAttrAccount as String : account,
@@ -55,7 +59,9 @@ public struct Keychain {
   ///   - accessGroup: The access group, this is for kSecAttrAccessGroup
   /// - Returns: True if the password can be set successfully
   @discardableResult public static func setPassword(_ password: String, forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
-    guard !service.isEmpty && !account.isEmpty else { return false }
+    guard !service.isEmpty && !account.isEmpty else {
+      return false
+    }
 
     var query = [
       kSecAttrAccount as String : account,
@@ -78,7 +84,9 @@ public struct Keychain {
   ///   - service: The service, this is for kSecAttrService
   /// - Returns: True if the password can be safely deleted
   @discardableResult public static func deletePassword(forAccount account: String, service: String = bundleIdentifier, accessGroup: String = "") -> Bool {
-    guard !service.isEmpty && !account.isEmpty else { return false }
+    guard !service.isEmpty && !account.isEmpty else {
+      return false
+    }
 
     var query = [
       kSecAttrAccount as String: account,
