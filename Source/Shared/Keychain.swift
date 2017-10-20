@@ -4,7 +4,7 @@ import Security
 public struct Keychain {
 
   /// This is used to identifier your service
-  static let bundleIdentifier: String = {
+  public static let bundleIdentifier: String = {
     return Bundle.main.bundleIdentifier ?? ""
   }()
 
