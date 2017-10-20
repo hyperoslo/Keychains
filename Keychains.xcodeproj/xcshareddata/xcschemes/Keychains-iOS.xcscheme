@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D56DA9E51C20608E003E7253"
+               BuildableName = "Tests-iOS.xctest"
+               BlueprintName = "Tests-iOS"
+               ReferencedContainer = "container:Keychains.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D56DA9DB1C20608E003E7253"
+            BuildableName = "Keychains.framework"
+            BlueprintName = "Keychains-iOS"
+            ReferencedContainer = "container:Keychains.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
