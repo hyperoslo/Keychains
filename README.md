@@ -1,3 +1,6 @@
+
+⚠️ DEPRECATED, NO LONGER MAINTAINED
+
 # Keychains
 
 [![Version](https://img.shields.io/cocoapods/v/Keychains.svg?style=flat)](http://cocoadocs.org/docsets/Keychains)
